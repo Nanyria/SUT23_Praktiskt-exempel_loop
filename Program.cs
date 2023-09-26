@@ -9,6 +9,8 @@ namespace SUT23_Praktiskt_exempel_loop
             Program Uppv = new Program();
             Uppv.Uppvärmning();
             
+            Program steg1 = new Program();
+            steg1.Steg1();
         }
         public void Uppvärmning()
         {
@@ -55,33 +57,33 @@ namespace SUT23_Praktiskt_exempel_loop
         //        Console.WriteLine("*");
         //    } while (nr >= a);
         //}
-        //public void steg2()
-        //{
-        //    Console.WriteLine("Enter amount:");
-        //    int j = Int32.Parse(Console.ReadLine());
-        //    for (int i = 0; i < j; i++)
-        //    {
-        //        Console.WriteLine("*");
-        //    }
+        public void steg2()
+        {
+            Console.WriteLine("Enter amount:");
+            int j = Int32.Parse(Console.ReadLine());
+            for (int i = 0; i < j; i++)
+            {
+                Console.WriteLine("*");
+            }
 
-        //    Console.ReadLine();
+            Console.ReadLine();
 
-        //    Console.WriteLine("Enter amount:");
-        //    int j = Int32.Parse(Console.ReadLine());
-        //    for (int i = 0; i < j; i++)
-        //    {
-        //        Console.WriteLine("*");
-        //        if (i == j)
-        //        {
-        //            Console.Write(" *");
-        //        }
-        //    }
+            Console.WriteLine("Enter amount:");
+            int j = Int32.Parse(Console.ReadLine());
+            for (int i = 0; i < j; i++)
+            {
+                Console.WriteLine("*");
+                if (i == j)
+                {
+                    Console.Write(" *");
+                }
+            }
 
-        //    Console.ReadLine();
-        //}
-
-
+            Console.ReadLine();
         }
+
+
+    }
         
             
 
