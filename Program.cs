@@ -115,20 +115,20 @@ namespace SUT23_Praktiskt_exempel_loop
         {
             Console.WriteLine("Enter amount:");
             int j = Int32.Parse(Console.ReadLine());
-            int start = 1;
+            int start = j - 1;
             for (int row = 0; row < j; row++)
             {
-                for (int col = 0; col < j; col++)
+                for (int col = 0; col < start; col++)
                 {
                     Console.Write(" ");
                 }
-                for (int col = 0; col < start; col++)
+                for (int col = 0; col < row * 2 + 1; col++)
                 {
-                    Console.Write("* ");
+                    Console.Write("*");
                 }
                 Console.WriteLine();
-                start++;
-                j--;
+                
+                start--;
             }
 
 
