@@ -140,63 +140,56 @@ namespace SUT23_Praktiskt_exempel_loop
         {
             Console.WriteLine("Enter amount:");
             int number = Int32.Parse(Console.ReadLine());
-            int space = number * 2;
+            int space = number - 1;
+            int plus = space * 3;
             for (int row = 0; row < number / 3; row++)
             {
-                for (int col = 0; col < space; col+= 2)
+                for (int col = 0; col < space; col++)
                 {
-                    for (int test = 0; test < (space - col) / 2; test++)
-                    {
-                        Console.Write(" ");
-                    }
-                    for (int star = 0; star <= col; star++)
-                    {
-                        Console.Write("*");
-                    }
-                    for (int mel = (space - col) / 2; mel <= space; mel++)
-                    {
-                        Console.Write(" ");
-                    }
-
+                    Console.Write(" ");
+                }
+                for (int col = 0; col < row * 2 + 1; col++)
+                {
+                    Console.Write("*");
                 }
                 Console.WriteLine();
 
+                space--;
+            }
+            space++;
+
+            for (int row = 0; row < number / 3; row++)
+            {
+                
+                for (int col = 0; col < space; col++)
+                {
+                    Console.Write(" ");
+                }
+                for (int col = 0; col < row * 2 + (number / 3); col++)
+                {
+                    
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+
+                space--;
                 
             }
-            
 
-            //for (int row = 0; row < number / 3; row++)
-            //{
-                
-            //    for (int col = 0; col < space; col++)
-            //    {
-            //        Console.Write(" ");
-            //    }
-            //    for (int col = 0; col < row * 2 + (number / 3); col++)
-            //    {
-                    
-            //        Console.Write("*");
-            //    }
-            //    Console.WriteLine();
+            for (int row = 0; row < number / 3; row++)
+            {
+                for (int col = 0; col < space; col++)
+                {
+                    Console.Write(" ");
+                }
+                for (int col = 0; col < row * 2 + (number / 3) + 1; col++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
 
-            //    space--;
-
-            //}
-
-            //for (int row = 0; row < number / 3; row++)
-            //{
-            //    for (int col = 0; col < space; col++)
-            //    {
-            //        Console.Write(" ");
-            //    }
-            //    for (int col = 0; col < row * 2 + (number / 3) + 1; col++)
-            //    {
-            //        Console.Write("*");
-            //    }
-            //    Console.WriteLine();
-
-            //    space--;
-            //}
+                space--;
+            }
 
 
         }
