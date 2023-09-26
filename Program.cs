@@ -156,8 +156,7 @@ namespace SUT23_Praktiskt_exempel_loop
 
                 space--;
             }
-            space++;
-
+            
             for (int row = 0; row < number / 3; row++)
             {
                 
