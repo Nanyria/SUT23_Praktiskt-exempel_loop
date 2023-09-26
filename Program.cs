@@ -6,11 +6,17 @@ namespace SUT23_Praktiskt_exempel_loop
     {
         static void Main(string[] args)
         {
-            Program Uppv = new Program();
-            Uppv.Uppvärmning();
+            //Program Uppv = new Program();
+            //Uppv.Uppvärmning();
             
-            Program steg1 = new Program();
-            steg1.Steg1();
+            //Program steg1 = new Program();
+            //steg1.steg1();
+
+            //Program steg2 = new Program();
+            //steg2.steg22();
+
+            Program steg3 = new Program();
+            steg3.steg3();
         }
         public void Uppvärmning()
         {
@@ -57,7 +63,7 @@ namespace SUT23_Praktiskt_exempel_loop
         //        Console.WriteLine("*");
         //    } while (nr >= a);
         //}
-        public void steg2()
+        public void steg1()
         {
             Console.WriteLine("Enter amount:");
             int j = Int32.Parse(Console.ReadLine());
@@ -67,19 +73,43 @@ namespace SUT23_Praktiskt_exempel_loop
             }
 
             Console.ReadLine();
-
+        }
+        public void steg22()
+        {
             Console.WriteLine("Enter amount:");
             int j = Int32.Parse(Console.ReadLine());
-            for (int i = 0; i < j; i++)
+            for (int row = 0; row < j; row++)
             {
-                Console.WriteLine("*");
-                if (i == j)
+                for (int col = 0; col <= row; col++)
                 {
-                    Console.Write(" *");
+                    Console.Write("*");
                 }
+                Console.WriteLine();
             }
 
             Console.ReadLine();
+        }
+        public void steg3()
+        {
+            Console.WriteLine("Enter amount:");
+            int j = Int32.Parse(Console.ReadLine());
+            for (int row = 0; row < j; row++)
+            {
+                for (int col = 0; col <= row; col++)
+                {
+                    Console.Write("*");
+                }
+                for (int col = 0; col >= row; col--)
+                {
+                    Console.Write("~");
+                }
+                Console.WriteLine();
+            }
+
+            Console.ReadLine();
+        }
+
+
         }
 
 
@@ -96,4 +126,4 @@ namespace SUT23_Praktiskt_exempel_loop
 
 
         
-    }
+    
