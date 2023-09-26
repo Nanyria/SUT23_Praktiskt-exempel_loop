@@ -99,7 +99,7 @@ namespace SUT23_Praktiskt_exempel_loop
                 {
                     Console.Write("*");
                 }
-                for (int col = 0; col >= row; col--)
+                for (int col = j; col >= row; col--)
                 {
                     Console.Write("~");
                 }
